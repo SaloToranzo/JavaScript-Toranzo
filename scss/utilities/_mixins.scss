@@ -1,0 +1,14 @@
+//transformaciones
+@mixin animacion{
+    transform: scale(1.5);
+    transition: 1s;
+};
+
+//flex
+@mixin flex($dir, $x, $y, $wrap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $x;
+    align-items: $y;
+    flex-wrap: $wrap;
+};

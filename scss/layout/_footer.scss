@@ -1,0 +1,27 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/mapas";
+@import "../utilities/extends";
+
+
+footer{
+    border-top: solid 0.7rem $colorSecundario;
+    background-color: $colorPrincipal;
+    padding: 1rem;
+    grid-area: footer;
+    width: 100%;
+    @include flex(row, space-between, end, nowrap);
+    .footerLogo{
+        height: 4rem;
+    }
+    .footerRedes{
+        height: 2rem;
+        margin: 0.3rem;
+        &:hover{
+            @include animacion;
+        }
+    }
+}
+.footerBootstrap{
+    position: absolute;
+}

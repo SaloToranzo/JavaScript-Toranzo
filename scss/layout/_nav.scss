@@ -1,0 +1,24 @@
+@import "../utilities/variables";
+
+header{
+    background-color: $colorPrincipal;
+    border-bottom: solid 0.7rem $colorSecundario;
+    nav{
+        ul{
+            list-style: none;
+            li{
+                font-family: $fontNav; 
+                font-size: 1.5rem;
+                margin-right: 2rem;
+                @media screen and (min-width: 1200px){
+                    &:hover{
+                        transform: scale(1.2);
+                        text-decoration: underline;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../utilities/extends";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.divBodyNotas{
+    background-color: $colorFondo;
+    main{
+        @extend %espacio;
+        .notas{
+            @include flex(column, center, center, nowrap);
+            .notasDiv{
+                margin: 2rem;
+                max-width: 20rem;
+            }
+            @media (min-width: 1200px){
+                @include flex (row, space-between, start, nowrap)
+            }
+        }
+        h1, h2{
+            @extend %titulos;
+        }
+        .notasParrafo{
+            @extend %parrafos;
+            max-width: fit-content;
+        }
+    }
+}

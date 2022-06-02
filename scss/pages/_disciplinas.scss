@@ -1,0 +1,29 @@
+@import "../utilities/extends";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.divBodyDisciplinas{
+    background-color: $colorFondo;
+    main{
+        @extend %espacio;
+        .disciplinas{
+            @include flex(column, center, center, nowrap);
+            .voley, .futbolFem{
+                margin: 2rem;
+            }
+            @media (min-width: 1200px){
+                @include flex (row, space-between, start, nowrap)
+            }
+        }
+        h1, h2{
+            @extend %titulos;
+        }
+        .disciplinasParrafo{
+            @extend %parrafos;
+        }
+        .disciplinasFoto{
+            max-width: 70%;
+        }
+    }
+}

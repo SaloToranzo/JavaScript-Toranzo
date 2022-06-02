@@ -1,0 +1,16 @@
+//utilities
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extends";
+@import "utilities/mapas";
+
+//layout
+@import "layout/nav";
+@import "layout/footer";
+
+//pages
+@import "pages/index";
+@import "pages/notas";
+@import "pages/calendarios";
+@import "pages/equipo";
+@import "pages/disciplinas"

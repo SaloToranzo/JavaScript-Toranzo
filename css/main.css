@@ -1,0 +1,310 @@
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+header {
+  background-color: #e0040b;
+  border-bottom: solid 0.7rem whitesmoke; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      font-family: "Shadows Into Light", cursive;
+      font-size: 1.5rem;
+      margin-right: 2rem; }
+      @media screen and (min-width: 1200px) {
+        header nav ul li:hover {
+          transform: scale(1.2);
+          text-decoration: underline; } }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+footer {
+  border-top: solid 0.7rem whitesmoke;
+  background-color: #e0040b;
+  padding: 1rem;
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: nowrap; }
+  footer .footerLogo {
+    height: 4rem; }
+  footer .footerRedes {
+    height: 2rem;
+    margin: 0.3rem; }
+    footer .footerRedes:hover {
+      transform: scale(1.5);
+      transition: 1s; }
+
+.footerBootstrap {
+  position: absolute; }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyIndex {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  @media screen and (min-width: 1200px) {
+    .divBodyIndex main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: "titulos titulos"
+ "novedades side"
+ "footer footer"; } }
+  .divBodyIndex main .titulos {
+    grid-area: titulos; }
+  .divBodyIndex main .novedades {
+    grid-area: novedades;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 1rem; }
+    .divBodyIndex main .novedades .noti1, .divBodyIndex main .novedades .noti2, .divBodyIndex main .novedades .noti3, .divBodyIndex main .novedades .noti4 {
+      margin: 2rem; }
+  .divBodyIndex main a {
+    text-decoration: none;
+    color: whitesmoke; }
+  .divBodyIndex main .novedadesFoto {
+    max-width: 70%; }
+  .divBodyIndex main aside {
+    grid-area: side;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .divBodyIndex main aside .asidePartido {
+      max-width: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+    .divBodyIndex main aside .asideTexto {
+      font-family: "Bebas Neue", cursive;
+      background-color: whitesmoke;
+      text-align: center;
+      font-size: 2rem;
+      border: 0.5rem solid whitesmoke;
+      border-radius: 1rem; }
+    .divBodyIndex main aside .partidoImg {
+      object-fit: contain;
+      height: 10rem; }
+      @media screen and (min-width: 1200px) {
+        .divBodyIndex main aside .partidoImg {
+          height: 12rem; }
+          .divBodyIndex main aside .partidoImg:hover {
+            transform: scale(1.5);
+            transition: 1s; } }
+    .divBodyIndex main aside .asideImpacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .divBodyIndex main aside .asideImpacto .impactoImg {
+        height: 11rem; }
+      .divBodyIndex main aside .asideImpacto .asideTextoImpacto {
+        text-align: center; }
+        .divBodyIndex main aside .asideImpacto .asideTextoImpacto span {
+          display: block; }
+    .divBodyIndex main aside .asideMixcloud {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .divBodyIndex main aside .asideMixcloud span {
+        display: block; }
+    .divBodyIndex main aside .whatsapp {
+      position: fixed;
+      bottom: 8rem;
+      right: 1rem; }
+      @media screen and (min-width: 1200px) {
+        .divBodyIndex main aside .whatsapp {
+          bottom: 8rem;
+          right: 3rem; } }
+      .divBodyIndex main aside .whatsapp .whatsappIcono {
+        height: 3rem; }
+        @media screen and (min-width: 768px) {
+          .divBodyIndex main aside .whatsapp .whatsappIcono {
+            height: 5rem; } }
+        @media screen and (min-width: 1200px) {
+          .divBodyIndex main aside .whatsapp .whatsappIcono:hover {
+            transform: scale(1.5);
+            transition: 1s; } }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyNotas {
+  background-color: grey; }
+  .divBodyNotas main .notas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .divBodyNotas main .notas .notasDiv {
+      margin: 2rem;
+      max-width: 20rem; }
+    @media (min-width: 1200px) {
+      .divBodyNotas main .notas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: nowrap; } }
+  .divBodyNotas main .notasParrafo {
+    max-width: fit-content; }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyCalendarios {
+  background-color: grey; }
+  .divBodyCalendarios main .fecha {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5rem; }
+  .divBodyCalendarios main .card {
+    max-width: 10rem; }
+    @media screen and (min-width: 1200px) {
+      .divBodyCalendarios main .card .resultado:hover {
+        transform: scale(1.5);
+        transition: 1s; } }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyEquipo {
+  background-color: grey; }
+  .divBodyEquipo main .equipoParrafo {
+    text-align: center; }
+  .divBodyEquipo main .miembros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem; }
+    @media (min-width: 1200px) {
+      .divBodyEquipo main .miembros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; } }
+    .divBodyEquipo main .miembros .equipoRedes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      .divBodyEquipo main .miembros .equipoRedes .equipoRrss {
+        height: 2rem;
+        padding: 0.2rem; }
+  .divBodyEquipo main .equipoMiembros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+  .divBodyEquipo main .equipoFoto {
+    height: 10rem;
+    margin: 1rem; }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyDisciplinas {
+  background-color: grey; }
+  .divBodyDisciplinas main .disciplinas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .divBodyDisciplinas main .disciplinas .voley, .divBodyDisciplinas main .disciplinas .futbolFem {
+      margin: 2rem; }
+    @media (min-width: 1200px) {
+      .divBodyDisciplinas main .disciplinas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: nowrap; } }
+  .divBodyDisciplinas main .disciplinasFoto {
+    max-width: 70%; }

@@ -1,0 +1,109 @@
+@import "../utilities/extends";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.divBodyIndex{
+    background-color: $colorFondo;
+    @include flex(column, center, center, nowrap);
+        main{
+            @media screen and (min-width: 1200px){
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-areas: "titulos titulos"
+                                    "novedades side"
+                                    "footer footer";
+            }
+            @extend %espacio;
+            .titulos{
+                grid-area: titulos;
+            }
+            .novedades{
+                grid-area: novedades;
+                @include flex(column, center, center, nowrap);
+                margin: 1rem;
+                .noti1, .noti2, .noti3, .noti4{
+                    margin: 2rem
+                }
+            }
+            h1, h2{
+                @extend %titulos;
+            }
+            a{
+                text-decoration: none;
+                color: $colorSecundario
+            }
+            .novedadesParrafo{
+                @extend %parrafos;
+            }
+            .novedadesFoto{
+                max-width: 70%;
+            }
+            aside{
+                grid-area: side;
+                gap: 2rem;
+                @include flex(column, space-around, center, nowrap);
+                .asidePartido{
+                    max-width: 12rem;
+                    @include flex(column, center, center, nowrap)
+                }
+                .asideTexto{
+                    font-family: map-get($map: $titulos, $key: titulo-font);
+                    background-color: map-get($map: $titulos, $key: titulo-color );
+                    text-align: center;
+                    font-size: 2rem;
+                    border: 0.5rem solid $colorSecundario;
+                    border-radius: 1rem;
+                }
+                .partidoImg{
+                    object-fit: contain;
+                    height: 10rem;
+                    @media screen and (min-width:1200px) {
+                        height: 12rem;
+                        &:hover{
+                            @include animacion
+                        }
+                    }
+                }
+                .asideImpacto{
+                    @include flex(column, center, center, nowrap);
+                    .impactoImg{
+                        height: 11rem
+                    }
+                    .asideTextoImpacto{
+                        @extend %parrafos;
+                        text-align: center;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+                .asideMixcloud{
+                    @include flex(column, center, center, nowrap);
+                    span{
+                        display: block;
+                    }
+                }
+                .whatsapp{
+                    position:fixed;
+                    bottom: 8rem;
+                    right: 1rem;
+                    @media screen and (min-width: 1200px){
+                        bottom: 8rem;
+                        right: 3rem;
+                    }
+                    .whatsappIcono{
+                        height: 3rem;
+                        @media screen and (min-width: 768px) {
+                            height: 5rem;
+                        }
+                        @media screen and (min-width: 1200px) {
+                            &:hover{
+                                @include animacion
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
