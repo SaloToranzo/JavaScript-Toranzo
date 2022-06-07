@@ -24,7 +24,7 @@ while (goles != "ERB"){
             alert('Tres goles le convirtió a Tristan Suarez por la fecha suspendida, pero no en este partido.');
             break;
         case "4":
-            alert('Instituto aún no ha logrado esta cantidad de goles en el campeonato.');
+            alert('Instituto aún no ha logrado esta cantidad de goles en un mismo partido de este campeonato.');
             break;
         case "5":
             alert('Hubiera sido una linda goleada, pero no fue el caso.');
