@@ -1,38 +1,68 @@
-let bienvenida = alert('Te damos la bienvenida a la web de Estacion')
+let nombre
+let correctas = 0
+let incorrectas = 0
 
-let nombre = prompt('Ingresá tu nombre')
-     while( nombre ===  '' || !isNaN(nombre)){
-     nombre = prompt('Por favor ingresá tu nombre')
-}
-
-let saludo = alert('Hola '+nombre+'. Para ingresar necesitas una contraseña, podés conocerla respondiendo correctamente la siguiente pregunta')
-
-let goles = prompt('¿Cuántos goles convirtio Instituto frente a Brown(PM)? \nPista: fueron menos de 5')
-
-while (goles != "ERB"){
-    switch (goles){
-        case "0":
-            alert('Correcto, '+nombre+'! La Gloria cayó ante Brown (PM) por 2-0. La contraseña es ERB');
-            break;
-        case "1":
-            alert('Aunque tuvo chances, Instituto no pudo convertirlas.');
-            break;
-        case "2":
-            alert('Dos fueron los goles convertidos por Brown(PM).');
-            break;
-        case "3":
-            alert('Tres goles le convirtió a Tristan Suarez por la fecha suspendida, pero no en este partido.');
-            break;
-        case "4":
-            alert('Instituto aún no ha logrado esta cantidad de goles en el campeonato.');
-            break;
-        case "5":
-            alert('Hubiera sido una linda goleada, pero no fue el caso.');
-            break;
-        default:
-            alert('No ingresaste un número del 0 al 5.')
-            break;
-            
+const preguntas = [
+    {
+        pregunta: "¿Cuántos puntos tiene Instituto en el campeonato?\n\n1: 30\n2: 31\n3: 32",
+        respuesta: 2
+    },
+    {
+        pregunta: "¿Cuál fue el resultado del último partido?\n\n1: 0 - 0\n2: 1 - 1\n3: 2 - 2",
+        respuesta: 1
+    },
+    {
+        pregunta: "¿Quién es el pateador de penales designado?\n\n1: Nicolás Mazzola\n2: Joaquín Molina\n3: Gabriel Graciani",
+        respuesta: 3
     }
-    goles = prompt('Ingresá la contraseña o volvé a intentarlo')
+]
+
+function bienvenida(){
+    alert('Te damos la bienvenida a la web de Estacion')
+    nombre = prompt('Ingresá tu nombre')
+        while( nombre ===  '' || !isNaN(nombre)){
+        nombre = prompt('Por favor ingresá tu nombre')
+        }
+    alert('Hola '+nombre+'. ¿Cómo estás con la actualidad de Instituto? Antes de ingresar, te hacemos unas preguntas.')
+
+    return nombre
 }
+
+function quiz(){
+    for (let i=0; i < preguntas.length; i++){
+        let solucion = window.prompt(preguntas[i].pregunta)
+        if(solucion == preguntas[i].respuesta){
+            correctas++
+            alert("¡Respuesta correcta!")
+        }else{
+            incorrectas++
+            alert("Incorrecto :(")
+        }
+    }
+}
+
+function resultado(){
+    switch (correctas){
+        case 1:
+            titulo="Sólo una correcta. Una lástima."
+            break
+        case 2:
+            titulo="Casi, casi. Contestaste dos correctamente"
+            break
+        case 3:
+            titulo="Genial. Contestaste todas correctamente."
+            break
+        default:
+            titulo="No contestaste ninguna correcta."
+            break
+    }
+    final = alert(`Completaste las preguntas, ${nombre}.\nRespuestas correctas: ${correctas}\nRespuestas incorrectas: ${incorrectas}\n${titulo}`)
+}
+
+function desafio(){
+    bienvenida()
+    quiz()
+    resultado()
+}
+
+desafio()
