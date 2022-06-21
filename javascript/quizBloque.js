@@ -11,6 +11,7 @@ intro.style.textAlign = "center"
 intro.style.fontFamily = "'Montserrat', sans-serif"
 
 const empezar = document.createElement("button")
+empezar.className = "boton"
 empezar.innerHTML = "Empezar"
 quiz.append(empezar)
 empezar.style.backgroundColor = "#e0040b"
@@ -18,3 +19,7 @@ empezar.style.color = "whitesmoke"
 empezar.style.borderRadius = "5px"
 empezar.style.border = "none"
 empezar.style.marginLeft = "45%"
+
+empezar.onclick = function(){
+    alert('Estamos trabajando en esta sección.')
+}
