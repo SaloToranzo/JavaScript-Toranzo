@@ -1,0 +1,67 @@
+@import "../utilities/extends";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.divBodyBloque{
+    background-color: $colorFondo;
+    main{
+        @extend %espacio;
+        h1,h2{
+            @extend %titulos;
+        }
+        .bloqueParrafo{
+            @extend %parrafos;
+            text-align: center;
+        }
+        .bloqueAclaracion{
+            @extend %parrafos;
+            text-align: right;
+            font-size: 0.7rem;
+        }
+        .bloqueMixcloud{
+            @extend %espacio;
+        }
+        .bloqueForm{
+            @include flex(column, center, center, nowrap);
+            
+
+            .bloqueFormDatos{
+                @extend %espacio;
+                background-color: $colorPrincipal;
+                color: $colorSecundario;
+                
+                .datos{
+                    display: inline-block;
+                    width: 90%;
+                    margin: 1rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    border-bottom: solid darkred 0.2rem;
+                }
+                .datosHistoria{
+                    margin: 1rem;
+                    display: inline-block;
+                    resize: none;
+                    text-align: center;
+                    width: 90%;
+                    height: 5rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    border-bottom: solid darkred 0.2rem;
+                }
+                .foto{
+                    margin: 1rem;
+                    display: inline-block;
+                }
+                .botones{
+                    display: inline-block;
+                    justify-content: center;
+                    margin: 1rem;
+                }
+                
+            }
+            
+        }
+    }
+}

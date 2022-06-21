@@ -1,12 +1,12 @@
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -24,15 +24,15 @@ header {
           transform: scale(1.2);
           text-decoration: underline; } }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -59,15 +59,15 @@ footer {
 .footerBootstrap {
   position: absolute; }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -82,9 +82,7 @@ footer {
     .divBodyIndex main {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: "titulos titulos"
- "novedades side"
- "footer footer"; } }
+      grid-template-areas: "titulos titulos" "novedades side" "footer footer"; } }
   .divBodyIndex main .titulos {
     grid-area: titulos; }
   .divBodyIndex main .novedades {
@@ -171,15 +169,15 @@ footer {
             transform: scale(1.5);
             transition: 1s; } }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -204,15 +202,15 @@ footer {
   .divBodyNotas main .notasParrafo {
     max-width: fit-content; }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -228,15 +226,15 @@ footer {
         transform: scale(1.5);
         transition: 1s; } }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -277,15 +275,15 @@ footer {
     height: 10rem;
     margin: 1rem; }
 
-.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2 {
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -308,3 +306,56 @@ footer {
         flex-wrap: nowrap; } }
   .divBodyDisciplinas main .disciplinasFoto {
     max-width: 70%; }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+.divBodyBloque {
+  background-color: grey; }
+  .divBodyBloque main .bloqueParrafo {
+    text-align: center; }
+  .divBodyBloque main .bloqueAclaracion {
+    text-align: right;
+    font-size: 0.7rem; }
+  .divBodyBloque main .bloqueForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .divBodyBloque main .bloqueForm .bloqueFormDatos {
+      background-color: #e0040b;
+      color: whitesmoke; }
+      .divBodyBloque main .bloqueForm .bloqueFormDatos .datos {
+        display: inline-block;
+        width: 90%;
+        margin: 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        border-bottom: solid darkred 0.2rem; }
+      .divBodyBloque main .bloqueForm .bloqueFormDatos .datosHistoria {
+        margin: 1rem;
+        display: inline-block;
+        resize: none;
+        text-align: center;
+        width: 90%;
+        height: 5rem;
+        border: none;
+        border-radius: 0.5rem;
+        border-bottom: solid darkred 0.2rem; }
+      .divBodyBloque main .bloqueForm .bloqueFormDatos .foto {
+        margin: 1rem;
+        display: inline-block; }
+      .divBodyBloque main .bloqueForm .bloqueFormDatos .botones {
+        display: inline-block;
+        justify-content: center;
+        margin: 1rem; }
