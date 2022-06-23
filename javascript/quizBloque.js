@@ -42,26 +42,45 @@ empezar.style.marginLeft = "45%"
 empezar.onclick = function(){
     empezar.remove()
     for (let i=0; i < preguntasFutbolActualidad.length; i++){
-        let preguntaDiv = document.createElement(`div`)
-        preguntaDiv.setAttribute("id", "preguntaDiv")
-        quiz.append(preguntaDiv)
-
-        let preguntaTexto = document.createElement(`p`)
-        
-
-        // opcionesDiv.append(siguiente)
-
-        // siguiente.addEventListener("click", function()){
-
-        // }
-    }
-    preguntaTexto.innerHTML = `${preguntasFutbolActualidad[i].futbolActualidad}`
+        preguntaTexto.innerHTML = `${preguntasFutbolActualidad[i].futbolActualidad}`
         opcion1.innerHTML = `${preguntasFutbolActualidad[i].opciones[0]}`
         opcion2.innerHTML = `${preguntasFutbolActualidad[i].opciones[1]}`
         opcion3.innerHTML = `${preguntasFutbolActualidad[i].opciones[2]}`
-        preguntaDiv.appendChild(preguntaTexto)
-        opcionesDiv.append(opcionesDiv)
-        
+    }
+
+    opcion1.addEventListener("click", function(e){
+        e.preventDefault()
+        respuestaUsuario(0)
+    })
+    opcion2.addEventListener("click", function(e){
+        e.preventDefault()
+        respuestaUsuario(1)
+    })
+    opcion3.addEventListener("click", function(e){
+        e.preventDefault()
+        respuestaUsuario(2)
+    }) 
+}
+
+// function quizFutbolActualidad(){
+//     for (let i=0; i < preguntasFutbolActualidad.length; i++){
+//     let solucion = window.prompt(preguntasFutbolActualidad[i].futbolActualidad)
+//         while (isNaN(solucion) || solucion >3){
+//             alert('Por favor, ingresá el número de la opción para responder.')
+//             solucion = parseInt(prompt(preguntasFutbolActualidad[i].futbolActualidad))
+//         }
+//         if(solucion == preguntasFutbolActualidad[i].respuesta){
+//             correctas++
+//         alert("¡Respuesta correcta!")
+//         }else{
+//             incorrectas++
+//         alert("Incorrecto :(")
+//         }
+//     }
+// }
+
+function respuestaUsuario(){
+    
 }
 
 
