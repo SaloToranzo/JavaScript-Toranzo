@@ -1,18 +1,14 @@
 let preguntaTexto = document.getElementById("preguntaTexto")
-        let opcion1 = document.getElementById("opcion1")
-        let opcion2 = document.getElementById("opcion2")
-        let opcion3 = document.getElementById("opcion3")
+let opcion1 = document.getElementById("opcion1")
+let opcion2 = document.getElementById("opcion2")
+let opcion3 = document.getElementById("opcion3")
 const resultadoDiv = document.getElementById("resultadoDiv")
 const resultadoRespuestas = document.getElementById("resultadoRespuestas")
 
 let correctas = 0
 let incorrectas = 0
 
-
-
-
 const formulario = document.getElementById("formulario")
-
 formulario.setAttribute("hidden", "true")
 
 const quiz = document.getElementById("quiz")
@@ -37,9 +33,11 @@ empezar.style.marginLeft = "45%"
 //     alert('Estamos trabajando en esta sección.')
 // }
 
+empezar.addEventListener("click", function(){
+    empezarQuiz()
+})
 
-
-empezar.onclick = function(){
+function empezarQuiz(){
     empezar.remove()
     for (let i=0; i < preguntasFutbolActualidad.length; i++){
         preguntaTexto.innerHTML = `${preguntasFutbolActualidad[i].futbolActualidad}`
@@ -48,19 +46,27 @@ empezar.onclick = function(){
         opcion3.innerHTML = `${preguntasFutbolActualidad[i].opciones[2]}`
     }
 
-    opcion1.addEventListener("click", function(e){
-        e.preventDefault()
-        respuestaUsuario(0)
-    })
-    opcion2.addEventListener("click", function(e){
-        e.preventDefault()
-        respuestaUsuario(1)
-    })
-    opcion3.addEventListener("click", function(e){
-        e.preventDefault()
-        respuestaUsuario(2)
-    }) 
+    opcion1.addEventListener("click", function (e) {
+            e.preventDefault()
+            solucion(0)
+        })
+    opcion2.addEventListener("click", function (e) {
+            e.preventDefault()
+            solucion(1)
+        })
+    opcion3.addEventListener("click", function (e) {
+            e.preventDefault()
+            solucion(2)
+        }) 
 }
+
+function resultado(){
+    let resultadoUsuario = opciones[i] === preguntasFutbolActualidad[i].respuesta
+    if(resultadoUsuario){
+        correctas++
+    }
+}
+
 
 // function quizFutbolActualidad(){
 //     for (let i=0; i < preguntasFutbolActualidad.length; i++){
@@ -79,9 +85,16 @@ empezar.onclick = function(){
 //     }
 // }
 
-function respuestaUsuario(){
-    
-}
+// function solucion(){
+//     if (opcion1.innerHTML === preguntasFutbolActualidad[i].respuesta){
+//         opcion1.style.backgroundColor = "green"
+//         correctas++
+//     }
+//     else{
+//         opcion1.style.backgroundColor = "darkred"
+//         incorrectas++
+//     }
+// }
 
 
         // let solucion = window.prompt(preguntasFutbolActualidad[i].futbolActualidad)
