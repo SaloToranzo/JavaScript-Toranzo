@@ -1,4 +1,5 @@
 let preguntaTexto = document.getElementById("preguntaTexto")
+const opcionesDiv = document.getElementById("opcionesDiv")
 let opcion1 = document.getElementById("opcion1")
 let opcion2 = document.getElementById("opcion2")
 let opcion3 = document.getElementById("opcion3")
@@ -7,6 +8,8 @@ const resultadoRespuestas = document.getElementById("resultadoRespuestas")
 
 let correctas = 0
 let incorrectas = 0
+
+let preguntasRandom, preguntaActualIndex
 
 const formulario = document.getElementById("formulario")
 formulario.setAttribute("hidden", "true")
@@ -29,23 +32,18 @@ empezar.style.borderRadius = "5px"
 empezar.style.border = "none"
 empezar.style.marginLeft = "45%"
 
-// empezar.onclick = function(){
-//     alert('Estamos trabajando en esta sección.')
-// }
-
 empezar.addEventListener("click", function(){
     empezarQuiz()
 })
 
 function empezarQuiz(){
     empezar.remove()
-    for (let i=0; i < preguntasFutbolActualidad.length; i++){
-        preguntaTexto.innerHTML = `${preguntasFutbolActualidad[i].futbolActualidad}`
-        opcion1.innerHTML = `${preguntasFutbolActualidad[i].opciones[0]}`
-        opcion2.innerHTML = `${preguntasFutbolActualidad[i].opciones[1]}`
-        opcion3.innerHTML = `${preguntasFutbolActualidad[i].opciones[2]}`
+    for (let i=0; i < preguntas.length; i++){
+        preguntaTexto.innerText = `${preguntas[i].pregunta}`
+        opcion1.innerText = `${preguntasFutbolActualidad[i].opciones[0]}`
+        opcion2.innerText = `${preguntasFutbolActualidad[i].opciones[1]}`
+        opcion3.innerText = `${preguntasFutbolActualidad[i].opciones[2]}`
     }
-
     opcion1.addEventListener("click", function (e) {
             e.preventDefault()
             solucion(0)
@@ -60,12 +58,99 @@ function empezarQuiz(){
         }) 
 }
 
-function resultado(){
-    let resultadoUsuario = opciones[i] === preguntasFutbolActualidad[i].respuesta
-    if(resultadoUsuario){
-        correctas++
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+// function empezarQuiz(){
+//     empezar.remove()
+//     pasarPregunta()
+
+// }
+
+// function pasarPregunta(){
+//     mostrarPregunta(preguntasRandom[preguntaActualIndex])
+
+// }
+
+
+// function mostrarPregunta(preguntas){
+//     preguntaTexto.innerHTML = preguntas.pregunta
+//     preguntas.opciones.forEach(respuestaUsuario => {
+//         const boton = document.createElement(`button`)
+//         boton.innerText = preguntas.opciones
+//         if(boton == preguntas[i].respuesta){
+//             alert("correcto")
+//         }
+//         else{
+//             alert('incorrecto')
+//         }
+//         boton.addEventListener("click", solucion)
+//         opcionesDiv.appendChild(boton)
+
+
+//     })
+
+// }
+
+
+
+// function solucion(e){
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function resultado(){
+//     let solucion = () => {opcion1[i] == preguntasFutbolActualidad[i].respuesta
+//     if(solucion){
+//         alert ('correcto')
+//         correctas++
+//     } else{
+//         incorrectas++
+//     }
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function quizFutbolActualidad(){
