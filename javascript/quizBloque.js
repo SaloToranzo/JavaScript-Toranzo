@@ -1,10 +1,13 @@
 let preguntaTexto = document.getElementById("preguntaTexto")
 const opcionesDiv = document.getElementById("opcionesDiv")
 let opcion1 = document.getElementById("opcion1")
+opcion1.setAttribute("class", "botonOpciones")
 let opcion2 = document.getElementById("opcion2")
+opcion2.setAttribute("class", "botonOpciones")
 let opcion3 = document.getElementById("opcion3")
-const resultadoDiv = document.getElementById("resultadoDiv")
-const resultadoRespuestas = document.getElementById("resultadoRespuestas")
+opcion3.setAttribute("class", "botonOpciones")
+// const resultadoDiv = document.getElementById("resultadoDiv")
+// const resultadoRespuestas = document.getElementById("resultadoRespuestas")
 
 let correctas = 0
 let incorrectas = 0
@@ -36,162 +39,45 @@ empezar.addEventListener("click", function(){
     empezarQuiz()
 })
 
+
 function empezarQuiz(){
     empezar.remove()
     for (let i=0; i < preguntas.length; i++){
         preguntaTexto.innerText = `${preguntas[i].pregunta}`
-        opcion1.innerText = `${preguntasFutbolActualidad[i].opciones[0]}`
-        opcion2.innerText = `${preguntasFutbolActualidad[i].opciones[1]}`
-        opcion3.innerText = `${preguntasFutbolActualidad[i].opciones[2]}`
+        opcion1.innerText = `${preguntas[i].opciones[0]}`
+        opcion2.innerText = `${preguntas[i].opciones[1]}`
+        opcion3.innerText = `${preguntas[i].opciones[2]}`
+    
     }
     opcion1.addEventListener("click", function (e) {
-            e.preventDefault()
-            solucion(0)
-        })
+        e.preventDefault()
+        solucion(0)
+    })
     opcion2.addEventListener("click", function (e) {
-            e.preventDefault()
-            solucion(1)
-        })
+        e.preventDefault()
+        solucion(1)
+    })
     opcion3.addEventListener("click", function (e) {
-            e.preventDefault()
-            solucion(2)
-        }) 
+        e.preventDefault()
+        solucion(2)
+    }) 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function empezarQuiz(){
-//     empezar.remove()
-//     pasarPregunta()
-
-// }
-
-// function pasarPregunta(){
-//     mostrarPregunta(preguntasRandom[preguntaActualIndex])
-
-// }
-
-
-// function mostrarPregunta(preguntas){
-//     preguntaTexto.innerHTML = preguntas.pregunta
-//     preguntas.opciones.forEach(respuestaUsuario => {
-//         const boton = document.createElement(`button`)
-//         boton.innerText = preguntas.opciones
-//         if(boton == preguntas[i].respuesta){
-//             alert("correcto")
-//         }
-//         else{
-//             alert('incorrecto')
-//         }
-//         boton.addEventListener("click", solucion)
-//         opcionesDiv.appendChild(boton)
-
-
-//     })
-
-// }
-
-
-
-// function solucion(e){
-
-
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function resultado(){
-//     let solucion = () => {opcion1[i] == preguntasFutbolActualidad[i].respuesta
-//     if(solucion){
-//         alert ('correcto')
-//         correctas++
-//     } else{
-//         incorrectas++
-//     }
-// }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function quizFutbolActualidad(){
-//     for (let i=0; i < preguntasFutbolActualidad.length; i++){
-//     let solucion = window.prompt(preguntasFutbolActualidad[i].futbolActualidad)
-//         while (isNaN(solucion) || solucion >3){
-//             alert('Por favor, ingresá el número de la opción para responder.')
-//             solucion = parseInt(prompt(preguntasFutbolActualidad[i].futbolActualidad))
-//         }
-//         if(solucion == preguntasFutbolActualidad[i].respuesta){
-//             correctas++
-//         alert("¡Respuesta correcta!")
-//         }else{
-//             incorrectas++
-//         alert("Incorrecto :(")
-//         }
-//     }
-// }
+function resultado(){
+    let resultadoDiv = document.createElement(`div`)
+    resultadoDiv.setAttribute("id", "resultadoDiv")
+    let resultadoTexto = document.createElement(`p`)
+    resultadoTexto.setAttribute("id", "resultadoTexto")
+    resultadoTexto.innerHTML = `Completaste las preguntas.<br>Respuestas correctas: ${correctas}<br>Respuestas incorrectas: ${incorrectas}`
+    resultadoDiv.appendChild(resultadoTexto)
+    quiz.append(resultadoDiv)
+}
 
 // function solucion(){
-//     if (opcion1.innerHTML === preguntasFutbolActualidad[i].respuesta){
-//         opcion1.style.backgroundColor = "green"
+//     let respuestasUsuario = opcion[i] == preguntas.respuesta
+//     if (respuestasUsuario){
 //         correctas++
-//     }
-//     else{
-//         opcion1.style.backgroundColor = "darkred"
+//     }else{
 //         incorrectas++
 //     }
 // }
-
-
-        // let solucion = window.prompt(preguntasFutbolActualidad[i].futbolActualidad)
-        //     while (isNaN(solucion) || solucion >3){
-        //         alert('Por favor, ingresá el número de la opción para responder.')
-        //         solucion = parseInt(prompt(preguntasFutbolActualidad[i].futbolActualidad))
-        //     }
-        //     if(solucion == preguntasFutbolActualidad[i].respuesta){
-        //         correctas++
-        //     alert("¡Respuesta correcta!")
-        //     }else{
-        //         incorrectas++
-        //     alert("Incorrecto :(")
-        //     }
-        // }
