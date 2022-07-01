@@ -82,9 +82,7 @@ footer {
     .divBodyIndex main {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: "titulos titulos"
- "novedades side"
- "footer footer"; } }
+      grid-template-areas: "titulos titulos" "novedades side" "footer footer"; } }
   .divBodyIndex main .titulos {
     grid-area: titulos; }
   .divBodyIndex main .novedades {
