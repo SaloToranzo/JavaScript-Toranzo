@@ -3,6 +3,7 @@
 @import "../utilities/mixins";
 @import "../utilities/variables";
 
+
 .divBodyBloque{
     background-color: $colorFondo;
     main{
@@ -25,11 +26,16 @@
         .bloqueForm{
             @include flex(column, center, center, nowrap);
             
+            .hide{
+                display: none;
+            }
 
             .bloqueFormDatos{
                 @extend %espacio;
                 background-color: $colorPrincipal;
                 color: $colorSecundario;
+                
+                
                 
                 .datos{
                     display: inline-block;
@@ -60,6 +66,46 @@
                     margin: 1rem;
                 }
                 
+            }
+
+            #quiz{
+                padding: 30px;
+                background-color: darkred;
+                color: $colorSecundario;
+                text-align: center;
+                font-size: 1.5rem;
+                @extend %parrafos;
+                width: 80vw;
+                
+                .hide{
+                    display: none;
+                }
+                
+                .btn{
+                    @extend %espacio;
+                    background-color: whitesmoke;
+                    color: $colorPrincipal;
+                    text-align: center;
+                    font-size: 1rem;
+                    margin: 2rem;
+                    justify-content: space-evenly;
+                    align-content: center;
+                    &:hover{
+                        border: black solid 2px;
+                        transform: scale(1.2);
+                        transition: 0.3s;
+                    }
+                    
+                    
+                }
+                .correct{
+                    background-color: green;
+                    color: black;
+                }
+                .wrong{
+                    background-color: red;
+                    color: whitesmoke;
+                }
             }
             
         }

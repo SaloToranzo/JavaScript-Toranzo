@@ -1,62 +1,98 @@
-const preguntas = [
+const questions = [
     {
-        pregunta: "¿Cuántos puntos tiene Instituto en el campeonato?",
-        opciones: [30, 31, 32],
-        respuesta: 2
+        question: "¿Cuántos puntos tiene Instituto en el campeonato?",
+        answers: [
+            {text: '36', correct: false},
+            {text: '37', correct: true},
+            {text: '38', correct: false}
+        ]
     },
     {
-        pregunta: "¿Cuál fue el resultado del último partido?",
-        opciones: ["0 - 0", "1 - 1", "2 - 2"],
-        respuesta: 1
+        question: "¿Cuál fue el resultado del último partido?",
+        answers: [
+            {text: '1 - 0', correct: true},
+            {text: '1 - 1', correct: false},
+            {text: '2 - 1', correct: false}
+        ]
     },
     {
-        pregunta: "¿Quién es el pateador de penales designado?",
-        opciones: ["Nicolás Mazzola", "Joaquín Molina", "Gabriel Graciani"],
-        respuesta: 3
+        question: "¿Quién es el pateador de penales designado?",
+        answers: [
+            {text: 'Nicolás Mazzola', correct: false},
+            {text: 'Joaquín Molina', correct: false},
+            {text: 'Gabriel Graciani', correct: true}
+        ]
     },
-    {
-        pregunta: "¿En qué año se fundó el club?",
-        opciones: [1916, 1917, 1918],
-        respuesta: 3
-    },
-    {
-        pregunta: "¿En qué fecha se festeja el día del hincha de Instituto?",
-        opciones: ["18 de junio", "19 de junio", "20 de junio"],
-        respuesta: 2
-    },
-    {
-        pregunta: "¿Quién es el goleador histórico de Instituto en AFA?",
-        opciones: ["Oscar Dertycia", "Mario Alberto Kempes", "Daniel Ángel Jiménez"],
-        respuesta: 1
-    },
-    {
-        pregunta: "¿Contra qué equipo definió Instituto el título de la LNB?",
-        opciones: ["Quimsa", "Boca Juniors", "San Martín"],
-        respuesta: 1
-    },
-    {
-        pregunta: "¿Cuál fue el resultado del quinto juego con el que Instituto se consagró campeón?",
-        opciones: ["82 - 83", "83 - 84", "84 - 85"],
-        respuesta: 3
-    },
-    {
-        pregunta: "¿Qué jugador se encargó del tiro libre final del partido?",
-        opciones: ["Nicolás Romano", "Martín Cuello", "Luciano González"],
-        respuesta: 2
-    },
-    {
-        pregunta: "¿Cuál fue la máxima instancia que Instituto disputó en la BCL Americas?",
-        opciones: ["Final", "Semifinal", "Fase de grupos"],
-        respuesta: 2
-    },
-    {
-        pregunta: "¿En qué año logró Instituto volver a la máxima categoría del básquet nacional?",
-        opciones: [2013, 2014, 2015],
-        respuesta: 3
-    },
-    {
-        pregunta: "¿Quién fue el técnico que logró coronar a Instituto como campeón del TNA?",
-        opciones: ["Osvaldo Arduh", "Sebastián Ginóbili", "Facundo Müller"],
-        respuesta: 1
-    }
+    // {
+    //     question: "¿En qué año se fundó el club?",
+    //     answers: [
+    //         {text: '1916', correct: false},
+    //         {text: '1917', correct: false},
+    //         {text: '1918', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: "¿En qué fecha se festeja el día del hincha de Instituto?",
+    //     answers: [
+    //         {text: '18 de junio', correct: false},
+    //         {text: '19 de junio', correct: true},
+    //         {text: '20 de junio', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: "¿Quién es el goleador histórico de Instituto en AFA?",
+    //     answers: [
+    //         {text: 'Oscar Dertycia', correct: true},
+    //         {text: 'Mario Alberto Kempes', correct: false},
+    //         {text: 'Daniel Ángel Jiménez', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: "¿Contra qué equipo definió Instituto el título de la LNB?",
+    //     answers: [
+    //         {text: 'Quimsa', correct: true},
+    //         {text: 'Boca Juniors', correct: false},
+    //         {text: 'San Martín', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: "¿Cuál fue el resultado del quinto juego con el que Instituto se consagró campeón?",
+    //     answers: [
+    //         {text: '82 - 83', correct: false},
+    //         {text: '83 - 84', correct: false},
+    //         {text: '84 - 85', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: "¿Qué jugador fue elegido como MVP de la final?",
+    //     answers: [
+    //         {text: 'Nicolás Romano', correct: false},
+    //         {text: 'Martín Cuello', correct: true},
+    //         {text: 'Luciano González', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: "¿Cuál fue la máxima instancia que Instituto disputó en la BCL Americas?",
+    //     answers: [
+    //         {text: 'Final', correct: false},
+    //         {text: 'Semifinal', correct: true},
+    //         {text: 'Fase de grupos', correct: false}
+    //     ]
+    // },
+    // {
+    //     question: "¿En qué año logró Instituto volver a la máxima categoría del básquet nacional?",
+    //     answers: [
+    //         {text: '2013', correct: false},
+    //         {text: '2014', correct: false},
+    //         {text: '2015', correct: true}
+    //     ]
+    // },
+    // {
+    //     question: "¿Quién fue el técnico que logró coronar a Instituto como campeón del TNA?",
+    //     answers: [
+    //         {text: 'Osvaldo Arduh', correct: true},
+    //         {text: 'Sebastián Ginóbili', correct: false},
+    //         {text: 'Facundo Müller', correct: false}
+    //     ]
+    // }
 ]
