@@ -14,7 +14,6 @@ botonSiguiente.addEventListener('click', () =>{
 })
 
 
-
 function empezarQuiz(){
     botonEmpezar.classList.add('hide')
     preguntasContainer.classList.remove('hide')
@@ -38,7 +37,7 @@ function mostrarPregunta(question){
             button.dataset.correct = answer.correct
         }
         button.addEventListener('click', opcionElegida)
-        preguntasDiv.appendChild(button)
+        opcionesDiv.appendChild(button)
     })
 }
 
@@ -58,6 +57,8 @@ function opcionElegida(e){
     } else{
         quiz.classList.add('hide')
         formulario.classList.remove('hide')
+        Swal.fire('Completá el formulario para finalizar.')
+
     }
 
 }
