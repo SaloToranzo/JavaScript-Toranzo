@@ -1,4 +1,3 @@
-const quiz = document.getElementById('quiz')
 const botonEmpezar = document.getElementById('botonEmpezar')
 const botonSiguiente = document.getElementById('botonSiguiente')
 const preguntasContainer = document.getElementById('divQuiz')
