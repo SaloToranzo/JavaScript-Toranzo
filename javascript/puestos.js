@@ -2,7 +2,7 @@ const coconduccion = document.querySelector(`#coconduccion`)
 const columnista = document.querySelector(`#columnista`)
 const produccion = document.querySelector(`#produccion`)
 const redes = document.querySelector(`#redes`)
-let url = "./puestos.json"
+let url = "puestos.json"
 
 fetch(url)
     .then((res) => res.json())
