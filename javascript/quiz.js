@@ -4,7 +4,12 @@ const preguntasContainer = document.getElementById('divQuiz')
 let preguntasAleatorias, preguntaIndex
 const preguntasDiv = document.getElementById('divPreguntas')
 const opcionesDiv = document.getElementById('divOpciones')
+
 const formulario = document.getElementById('formulario')
+
+let userAnswers = []
+let correct = []
+let incorrect = []
 
 botonEmpezar.addEventListener('click', empezarQuiz)
 botonSiguiente.addEventListener('click', () =>{
@@ -26,19 +31,19 @@ function siguientePregunta(){
     mostrarPregunta(preguntasAleatorias[preguntaIndex])
 }
 
-function mostrarPregunta(question){
-    preguntasDiv.innerText = question.question
-    question.answers.forEach(answer =>{
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
-        if(answer.correct){
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener('click', opcionElegida)
-        opcionesDiv.appendChild(button)
-    })
-}
+function mostrarPregunta(questions){
+    preguntasDiv.innerText = questions.text
+    let op1 = document.createElement('button')
+    op1.classList.add('btn')
+    let op2 = document.createElement('button')
+    op2.classList.add('btn')
+    let op3 = document.createElement('button')
+    op3.classList.add('btn')
+    op1.innerHTML = `${questions[i].options[0]}`
+    op2.innerHTML = `${questions[i].options[1]}`
+    op3.innerHTML = `${questions[i].options[2]}`
+    opcionesDiv.appendChild(op1, op2, op3)
+    }
 
 function resetQuiz(){
     botonSiguiente.classList.add('hide')
@@ -59,7 +64,6 @@ function opcionElegida(e){
         Swal.fire('Completá el formulario para finalizar.')
 
     }
-
 }
 
 

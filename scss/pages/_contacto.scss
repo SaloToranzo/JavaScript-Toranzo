@@ -1,0 +1,46 @@
+@import "../utilities/extends";
+@import "../utilities/mapas";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.divBodyContacto{
+    background-color: $colorFondo;
+    main{
+        @extend %espacio;
+        @include flex(column, center, center, nowrap);
+        h1{
+            text-align: center;
+            @extend %titulos;
+        };
+        .bloqueFormDatos{
+            width: 50rem;
+            @include flex(column, center, center, nowrap);
+            @extend %espacio;
+            background-color: darkred;
+            color: $colorSecundario;
+            .datos{
+                display: inline-block;
+                width: 90%;
+                margin: 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                border-bottom: solid darkred 0.2rem;
+            };
+            .btn{
+                @extend %espacio;
+                background-color: whitesmoke;
+                color: $colorPrincipal;
+                text-align: center;
+                font-size: 1rem;
+                margin: 2rem;
+                justify-content: center;
+                align-content: center;
+                &:hover{
+                    border: black solid 2px;
+                    transform: scale(1.2);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
