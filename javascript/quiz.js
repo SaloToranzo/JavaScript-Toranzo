@@ -1,15 +1,47 @@
 const botonEmpezar = document.getElementById('botonEmpezar')
 const botonSiguiente = document.getElementById('botonSiguiente')
 const preguntasContainer = document.getElementById('divQuiz')
-let preguntasAleatorias, preguntaIndex
 const preguntasDiv = document.getElementById('divPreguntas')
 const opcionesDiv = document.getElementById('divOpciones')
+// let preguntasAleatorias, preguntaIndex
 
 const formulario = document.getElementById('formulario')
 
 let userAnswers = []
 let correct = []
 let incorrect = []
+
+// //EMPEZAR QUIZ
+// botonEmpezar.addEventListener('click', startQuiz)
+// function startQuiz(e) {
+//     botonEmpezar.classList.add('hide')
+//     preguntasContainer.classList.remove('hide')
+//     for (let i = 0; i < questions.length; i++){
+//         preguntasDiv.innerHTML = `${questions[i].text}`
+//         let op1 = document.createElement('button')
+//         op1.classList.add('btn')
+//         let op2 = document.createElement('button')
+//         op2.classList.add('btn')
+//         let op3 = document.createElement('button')
+//         op3.classList.add('btn')
+//         opcionesDiv.append(op1, op2, op3)
+//         op1.innerText = questions.options[0]
+//         op2.innerText = questions.options[1]
+//         op3.innerText = questions.options[2]
+        
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 botonEmpezar.addEventListener('click', empezarQuiz)
 botonSiguiente.addEventListener('click', () =>{
@@ -21,7 +53,9 @@ botonSiguiente.addEventListener('click', () =>{
 function empezarQuiz(){
     botonEmpezar.classList.add('hide')
     preguntasContainer.classList.remove('hide')
-    preguntasAleatorias = questions.sort(() => Math.random() - .5)
+    for (let i = 0; i < questions.length; i++) {
+        preguntasAleatorias = questions.sort(() => Math.random() - .5)
+    }
     preguntaIndex = 0
     siguientePregunta()
 }
@@ -39,10 +73,11 @@ function mostrarPregunta(questions){
     op2.classList.add('btn')
     let op3 = document.createElement('button')
     op3.classList.add('btn')
-    op1.innerHTML = `${questions[i].options[0]}`
-    op2.innerHTML = `${questions[i].options[1]}`
-    op3.innerHTML = `${questions[i].options[2]}`
-    opcionesDiv.appendChild(op1, op2, op3)
+    opcionesDiv.append(op1, op2, op3)
+    op1.innerText = questions.options[0]
+    op2.innerText = questions.options[1]
+    op3.innerText = questions.options[2]
+    
     }
 
 function resetQuiz(){
@@ -55,7 +90,6 @@ function resetQuiz(){
 
 function opcionElegida(e){
     const opcionBoton = e.target
-    const correct = opcionBoton.dataset.correct
     if(preguntasAleatorias.length > preguntaIndex +1){
     botonSiguiente.classList.remove('hide')
     } else{
