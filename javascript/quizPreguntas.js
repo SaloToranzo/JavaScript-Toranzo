@@ -1,21 +1,24 @@
 const questions = [
     {
         text: '¿Cuántos puntos tiene Instituto en el campeonato?',
-        options: ["36", "37", "38"],
-        answer: '37',
-        score: 1
+        option1: '36',
+        option2: '37',
+        option3: '38',
+        answer: '1',
     },
     {
         text: '¿Cuál fue el resultado del último partido?',
-        options: ['1 - 0', '1 - 1', '2 - 1'],
-        answer: '1 - 0',
-        score: 1
+        option1: 'Derrota 2 - 0',
+        option2: 'Empate 2 - 2',
+        option3: 'Victoria 2 - 0',
+        answer: '1',
     },
     {
         text: '¿Quién es el pateador de penales designado?',
-        options: ['Nicolás Mazzola', 'Joaquín Molina', 'Gabriel Graciani'],
-        answer: 'Gabriel Graciani',
-        score: 1
+        option1: 'Nicolás Mazzola',
+        option2: 'Joaquín Molina',
+        option3: 'Gabriel Graciani',
+        answer: '3',
     },
     // {
     //     text: '¿En qué año se fundó el club?',

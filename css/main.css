@@ -2,11 +2,11 @@
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -32,11 +32,11 @@ header {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -67,11 +67,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -177,11 +177,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -210,11 +210,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -234,11 +234,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -312,11 +312,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -344,11 +344,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -359,66 +359,107 @@ footer {
   .divBodyBloque main .bloqueAclaracion {
     text-align: right;
     font-size: 0.7rem; }
-  .divBodyBloque main .bloqueForm {
+  @media screen and (min-width: 1200px) {
+    .divBodyBloque main .bloqueForm {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "participa participa" "form quiz";
+      gap: 2rem; } }
+  .divBodyBloque main .bloqueForm .participa {
+    grid-area: participa;
+    text-align: center; }
+  .divBodyBloque main .bloqueForm .hide {
+    display: none; }
+  .divBodyBloque main .bloqueForm .formFlex {
+    border-radius: 0.5rem;
+    border: solid darkred 0.2rem;
+    grid-area: form;
+    margin: 2rem; }
+  .divBodyBloque main .bloqueForm .bloqueFormDatos {
+    background-color: darkred;
+    color: whitesmoke; }
+    .divBodyBloque main .bloqueForm .bloqueFormDatos .datos {
+      display: inline-block;
+      width: 90%;
+      margin: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      border-bottom: solid darkred 0.2rem; }
+    .divBodyBloque main .bloqueForm .bloqueFormDatos .datosHistoria {
+      margin: 1rem;
+      display: inline-block;
+      resize: none;
+      text-align: center;
+      width: 90%;
+      height: 5rem;
+      border: none;
+      border-radius: 0.5rem;
+      border-bottom: solid darkred 0.2rem; }
+    .divBodyBloque main .bloqueForm .bloqueFormDatos .foto {
+      margin: 1rem;
+      display: inline-block; }
+    .divBodyBloque main .bloqueForm .bloqueFormDatos .btn {
+      background-color: whitesmoke;
+      color: #e0040b;
+      text-align: center;
+      font-size: 1rem;
+      margin: 2rem;
+      width: 7rem;
+      height: 5rem;
+      justify-content: space-evenly;
+      align-content: center; }
+      .divBodyBloque main .bloqueForm .bloqueFormDatos .btn:hover {
+        border: black solid 2px;
+        transform: scale(1.2);
+        transition: 0.3s; }
+  .divBodyBloque main .bloqueForm #quizFlex {
+    border-radius: 0.5rem;
+    border: solid darkred 0.2rem;
+    grid-area: quiz;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; }
-    .divBodyBloque main .bloqueForm .hide {
-      display: none; }
-    .divBodyBloque main .bloqueForm .bloqueFormDatos {
-      background-color: #e0040b;
-      color: whitesmoke; }
-      .divBodyBloque main .bloqueForm .bloqueFormDatos .datos {
-        display: inline-block;
-        width: 90%;
-        margin: 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        border-bottom: solid darkred 0.2rem; }
-      .divBodyBloque main .bloqueForm .bloqueFormDatos .datosHistoria {
-        margin: 1rem;
-        display: inline-block;
-        resize: none;
-        text-align: center;
-        width: 90%;
-        height: 5rem;
-        border: none;
-        border-radius: 0.5rem;
-        border-bottom: solid darkred 0.2rem; }
-      .divBodyBloque main .bloqueForm .bloqueFormDatos .foto {
-        margin: 1rem;
-        display: inline-block; }
-      .divBodyBloque main .bloqueForm .bloqueFormDatos .botones {
-        display: inline-block;
-        justify-content: center;
-        margin: 1rem; }
-    .divBodyBloque main .bloqueForm #quiz {
-      padding: 30px;
-      background-color: darkred;
+    flex-wrap: column; }
+    .divBodyBloque main .bloqueForm #quizFlex .quizParrafo {
+      text-align: center;
+      font-size: 1.2rem; }
+    .divBodyBloque main .bloqueForm #quizFlex #quiz {
+      background-color: grey;
       color: whitesmoke;
       text-align: center;
       font-size: 1.5rem;
-      width: 80vw; }
-      .divBodyBloque main .bloqueForm #quiz .hide {
+      max-width: 50vw; }
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .preguntasTexto {
+        color: whitesmoke;
+        margin-bottom: 2rem; }
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .hide {
         display: none; }
-      .divBodyBloque main .bloqueForm #quiz .btn {
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .botonesQuiz {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; }
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .btn {
         background-color: whitesmoke;
         color: #e0040b;
         text-align: center;
         font-size: 1rem;
         margin: 2rem;
+        width: 10rem;
+        height: 5rem;
         justify-content: space-evenly;
         align-content: center; }
-        .divBodyBloque main .bloqueForm #quiz .btn:hover {
+        .divBodyBloque main .bloqueForm #quizFlex #quiz .btn:hover {
           border: black solid 2px;
           transform: scale(1.2);
           transition: 0.3s; }
-      .divBodyBloque main .bloqueForm #quiz .correct {
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .correct {
         background-color: green;
         color: black; }
-      .divBodyBloque main .bloqueForm #quiz .wrong {
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .incorrect {
         background-color: red;
         color: whitesmoke; }
 
@@ -426,11 +467,11 @@ footer {
   font-family: "Bebas Neue", cursive;
   color: whitesmoke; }
 
-.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quiz {
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
   font-family: "Montserrat", sans-serif;
   color: black; }
 
-.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm #quiz .btn, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn {
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
   margin: 0.5rem;
   padding: 1rem; }
 
@@ -472,3 +513,62 @@ footer {
           border: black solid 2px;
           transform: scale(1.2);
           transition: 0.3s; }
+
+.divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2, .divBodyContacto main h1 {
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke; }
+
+.divBodyIndex main .novedadesParrafo, .divBodyIndex main aside .asideImpacto .asideTextoImpacto, .divBodyNotas main .notasParrafo, .divBodyEquipo main .equipoParrafo, .divBodyEquipo main #postulacion, .divBodyDisciplinas main .disciplinasParrafo, .divBodyBloque main .bloqueParrafo, .divBodyBloque main .bloqueAclaracion, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyBloque main .bloqueForm #quizFlex #quiz, #quiz {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.divBodyIndex main, .divBodyNotas main, .divBodyEquipo main, .divBodyEquipo main #postulacion .btn, .divBodyDisciplinas main, .divBodyBloque main, .divBodyBloque main .bloqueMixcloud, .divBodyBloque main .bloqueForm .bloqueFormDatos, .divBodyBloque main .bloqueForm .bloqueFormDatos .btn, .divBodyBloque main .bloqueForm #quizFlex .quizParrafo, .divBodyContacto main, .divBodyContacto main .bloqueFormDatos, .divBodyContacto main .bloqueFormDatos .btn, #quiz .btn {
+  margin: 0.5rem;
+  padding: 1rem; }
+
+#quiz {
+  padding: 30px;
+  background-color: grey;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100vw; }
+  #quiz .preguntasTexto {
+    color: whitesmoke;
+    margin-bottom: 2rem; }
+  #quiz .hide {
+    display: none; }
+  #quiz .botonesQuiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem; }
+    @media (min-width: 1200px) {
+      #quiz .botonesQuiz {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; } }
+  #quiz .btn {
+    background-color: whitesmoke;
+    color: #e0040b;
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem;
+    width: 10rem;
+    height: 5rem;
+    justify-content: space-evenly;
+    align-content: center; }
+    #quiz .btn:hover {
+      border: black solid 2px;
+      transform: scale(1.2);
+      transition: 0.3s; }
+  #quiz .correct {
+    background-color: green;
+    color: black; }
+  #quiz .wrong {
+    background-color: red;
+    color: whitesmoke; }

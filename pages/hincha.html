@@ -92,64 +92,70 @@
 
             
             <section class="bloqueForm" id="container">
-                <h2 class="bloqueTitulos">
+                <h2 class="bloqueTitulos participa">
                     ¡Participá vos también!
                 </h2>
-                <p id="participaTexto" class="bloqueParrafo">
-                    Para participar del Bloque, te pedimos que respondas las siguientes preguntas y completes el formulario.
-                </p>
-                
 
-                <div id="quiz">
-                    
-                    <div id="divQuiz" class="hide">
-                        <div id="divPreguntas">Pregunta</div>
-                        <div id="divOpciones" class="btnOpciones"></div>
-                    </div>
-
-                    <div class="botonesQuiz">
-                        <button id="botonEmpezar" class="btnEmpezar btn">Empezar</button>
-                        <button id="botonSiguiente" class="btnSiguiente btn hide">Siguiente</button>
-                    </div>
-
-                
+                <div class="formFlex">
+                    <p id="participaTexto" class="bloqueParrafo">
+                        
+                    </p>
+                    <form action="" class="bloqueFormDatos" id="formulario">
+                        <fieldset>
+                            <legend>
+                                Para participar del Bloque, te pedimos que completes el formulario
+                            </legend>
+    
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" class="datos" id="userName" required>
+                            </div>
+                            <div>
+                                <label for="edad">Edad</label>
+                                <input type="number" name="edad" min="18" class="datos" id="age" required>
+                            </div>
+                            <div>
+                                <label for="telefono">Telefono de contacto</label>
+                                <input type="tel" name="telefono" class="datos" id="phone" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="datos" id="email" required>
+                            </div>
+                            <div>
+                                <label for="historia">Tu historia con Instituto</label>
+                                <input type="text" name="historia" placeholder="Contanos lo que significa Instituto para vos" class="datosHistoria" id="message" required>
+                            </div>
+                            <div>
+                                <input type="submit" class="btn" id="send">
+                                <input type="reset" class="btn" id="reset">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-                
-                
 
+                <div id="quizFlex">
+                    <p class="quizParrafo">
+                        En Estación también nos divertimos con nuestros oyentes con un juego.
+                        <br>Tenés que responder preguntas sobre la actualidad y la historia del club.
+                        <br>¿Te animás a participar?
+                    </p>
 
-                <form action="" class="bloqueFormDatos hide" id="formulario">
-                    <fieldset>
-                        <legend>
-                            Completá tus datos
-                        </legend>
-
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" class="datos" id="userName" required>
+                    <div id="quiz">
+                        <div class="botonesQuiz">
+                            <button id="botonEmpezar" class="btnEmpezar btn">Empezar</button>
+                            <button id="botonScores" class="btn">Tabla de posiciones</button>
                         </div>
-                        <div>
-                            <label for="edad">Edad</label>
-                            <input type="number" name="edad" min="18" class="datos" id="age" required>
+                        <div id="divQuiz">                            
+                            <div id="divPreguntas" class="preguntasTexto">Pregunta</div>
+                            <div id="divOpciones" class="btnOpciones">
+                                <button data-number="1" class="optBtn btn">1</button>
+                                <button data-number="2" class="optBtn btn">2</button>
+                                <button data-number="3" class="optBtn btn">3</button>
+                            </div>
                         </div>
-                        <div>
-                            <label for="telefono">Telefono de contacto</label>
-                            <input type="tel" name="telefono" class="datos" id="phone" required>
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" class="datos" id="email" required>
-                        </div>
-                        <div>
-                            <label for="historia">Tu historia con Instituto</label>
-                            <input type="text" name="historia" placeholder="Contanos lo que significa Instituto para vos" class="datosHistoria" id="message" required>
-                        </div>
-                        <div>
-                            <input type="submit" class="botones" id="send">
-                            <input type="reset" class="botones" id="reset">
-                        </div>
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
             </section>
         </main>
 
