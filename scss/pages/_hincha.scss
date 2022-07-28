@@ -144,14 +144,17 @@
                             transition: 0.3s;
                         }
                     }
-                    .correct{
-                        background-color: green;
-                        color: black;
+                    .divQuiz{
+                        .correct{
+                            background-color: green;
+                            color: black;
+                        }
+                        .incorrect{
+                            background-color: darkred;
+                            color: whitesmoke;
+                        }
                     }
-                    .incorrect{
-                        background-color: red;
-                        color: whitesmoke;
-                    }
+                    
                 }
             }
             

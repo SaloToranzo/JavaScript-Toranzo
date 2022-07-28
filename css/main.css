@@ -86,7 +86,9 @@ footer {
     .divBodyIndex main {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: "titulos titulos" "novedades side" "footer footer"; } }
+      grid-template-areas: "titulos titulos"
+ "novedades side"
+ "footer footer"; } }
   .divBodyIndex main .titulos {
     grid-area: titulos; }
   .divBodyIndex main .novedades {
@@ -363,7 +365,8 @@ footer {
     .divBodyBloque main .bloqueForm {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "participa participa" "form quiz";
+      grid-template-areas: "participa participa"
+ "form quiz";
       gap: 2rem; } }
   .divBodyBloque main .bloqueForm .participa {
     grid-area: participa;
@@ -456,11 +459,11 @@ footer {
           border: black solid 2px;
           transform: scale(1.2);
           transition: 0.3s; }
-      .divBodyBloque main .bloqueForm #quizFlex #quiz .correct {
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .divQuiz .correct {
         background-color: green;
         color: black; }
-      .divBodyBloque main .bloqueForm #quizFlex #quiz .incorrect {
-        background-color: red;
+      .divBodyBloque main .bloqueForm #quizFlex #quiz .divQuiz .incorrect {
+        background-color: darkred;
         color: whitesmoke; }
 
 .divBodyIndex main h1, .divBodyIndex main h2, .divBodyNotas main h1, .divBodyNotas main h2, .divBodyCalendarios main h1, .divBodyEquipo main h1, .divBodyEquipo main h2, .divBodyEquipo main h3, .divBodyEquipo main h4, .divBodyDisciplinas main h1, .divBodyDisciplinas main h2, .divBodyBloque main h1, .divBodyBloque main h2, .divBodyContacto main h1 {
@@ -569,6 +572,6 @@ footer {
   #quiz .correct {
     background-color: green;
     color: black; }
-  #quiz .wrong {
-    background-color: red;
+  #quiz .incorrect {
+    background-color: darkred;
     color: whitesmoke; }

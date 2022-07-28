@@ -147,11 +147,19 @@
                             <button id="botonScores" class="btn">Tabla de posiciones</button>
                         </div>
                         <div id="divQuiz">                            
-                            <div id="divPreguntas" class="preguntasTexto">Pregunta</div>
-                            <div id="divOpciones" class="btnOpciones">
+                            <div id="divPreguntas" class="preguntasTexto hide">Pregunta</div>
+                            <div id="divOpciones" class="btnOpciones hide">
                                 <button data-number="1" class="optBtn btn">1</button>
                                 <button data-number="2" class="optBtn btn">2</button>
                                 <button data-number="3" class="optBtn btn">3</button>
+                            </div>
+                            <div id="endQuiz" class="hide">
+                                <p class="quizParrafo">Puntaje final</p>
+                                <p id="finalScore">0</p>
+                                <form action="" class="endQuizForm">
+                                    <input type="text" name="name" id="userName" placeholder="Escribí tu nombre">
+                                    <button type="submit" id="saveScoreBtn" class="btn" onclick="saveHighscore(event)" disabled>Guardar</button>
+                                </form>
                             </div>
                         </div>
                     </div>

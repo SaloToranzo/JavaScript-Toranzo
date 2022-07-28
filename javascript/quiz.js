@@ -5,6 +5,7 @@ const divPreguntas = document.getElementById('divPreguntas');
 const divOpciones = document.getElementById('divOpciones');
 const opciones = Array.from(document.querySelectorAll('.optBtn'));
 const botonScores = document.getElementById('botonScores');
+const endQuiz = document.getElementById('endQuiz')
 
 let acceptingAnswers = true;
 let score = 0;
@@ -12,6 +13,7 @@ let currentQuestion = {};
 let availableQuestions = []
 let questionCounter = 0
 const MAX_QUESTIONS = 3
+const POINTS = 1
 
 
 botonEmpezar.addEventListener('click', startQuiz)
@@ -20,6 +22,8 @@ function startQuiz(){
     botonEmpezar.classList.add('hide')
     botonScores.classList.add('hide')
     divQuiz.classList.remove('hide')
+    divPreguntas.classList.remove('hide')
+    divOpciones.classList.remove('hide')
     score = 0;
     availableQuestions = [...questions];
     nextQuestion();
@@ -29,7 +33,7 @@ function startQuiz(){
 nextQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html');
+        return $('#endQuiz').load();
     }
 
     questionCounter++
@@ -53,8 +57,15 @@ opciones.forEach(option => {
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
+        let answerColor = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        if(answerColor === 'correct') {
+            incrementScore(POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(answerColor)
         setTimeout(() => {
-            getNewQuestion()
+            selectedChoice.parentElement.classList.remove(answerColor)
+            nextQuestion()
 
         }, 1000)
     })
@@ -64,9 +75,6 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
-
-
-
 
 
 
