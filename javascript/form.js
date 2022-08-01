@@ -1,6 +1,7 @@
 const container = document.getElementById('container')
-const form =document.getElementById('formulario')
-const sendBtn = document.getElementById('send')
+const formularioDiv = document.getElementById('formularioDiv')
+const form =document.getElementById('form')
+const sendBtn = document.getElementById('button')
 const resetBtn = document.getElementById('reset')
 const texto = document.getElementById('participaTexto')
 
@@ -39,10 +40,10 @@ sendBtn.addEventListener('click', (e) =>{
     Swal.fire({
         icon: 'success',
         title: '¡Todo listo!',
-        text: 'Gracias por responder las preguntas. Pronto nos comunicaremos con vos.',
+        text: 'Pronto nos comunicaremos con vos.',
       })
     const final = document.createElement('div')
     final.innerHTML = "<p>¡Gracias por sumarte a Estación!</p>"
     final.classList.add('bloqueParrafo')
-    container.appendChild(final)
+    formularioDiv.appendChild(final)
 })

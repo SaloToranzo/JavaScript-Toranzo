@@ -97,41 +97,41 @@
                 </h2>
 
                 <div class="formFlex">
-                    <p id="participaTexto" class="bloqueParrafo">
+                    <p id="participaTexto" class="bloqueParrafo"></p>
+                    <div id="formularioDiv">
+                        <form action="" class="bloqueFormDatos" id="form">
+                            <fieldset>
+                                <legend>
+                                    Para participar del Bloque, te pedimos que completes el formulario
+                                </legend>
                         
-                    </p>
-                    <form action="" class="bloqueFormDatos" id="formulario">
-                        <fieldset>
-                            <legend>
-                                Para participar del Bloque, te pedimos que completes el formulario
-                            </legend>
-    
-                            <div>
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" class="datos" id="userName" required>
-                            </div>
-                            <div>
-                                <label for="edad">Edad</label>
-                                <input type="number" name="edad" min="18" class="datos" id="age" required>
-                            </div>
-                            <div>
-                                <label for="telefono">Telefono de contacto</label>
-                                <input type="tel" name="telefono" class="datos" id="phone" required>
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="datos" id="email" required>
-                            </div>
-                            <div>
-                                <label for="historia">Tu historia con Instituto</label>
-                                <input type="text" name="historia" placeholder="Contanos lo que significa Instituto para vos" class="datosHistoria" id="message" required>
-                            </div>
-                            <div>
-                                <input type="submit" class="btn" id="send">
-                                <input type="reset" class="btn" id="reset">
-                            </div>
-                        </fieldset>
-                    </form>
+                                <div>
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" class="datos" id="userName" required>
+                                </div>
+                                <div>
+                                    <label for="edad">Edad</label>
+                                    <input type="number" name="edad" min="18" class="datos" id="age" required>
+                                </div>
+                                <div>
+                                    <label for="telefono">Telefono de contacto</label>
+                                    <input type="tel" name="telefono" class="datos" id="phone" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="datos" id="email" required>
+                                </div>
+                                <div>
+                                    <label for="historia">Tu historia con Instituto</label>
+                                    <input type="text" name="historia" placeholder="Contanos lo que significa Instituto para vos" class="datosHistoria" id="message" required>
+                                </div>
+                                <div>
+                                    <input type="submit" class="btn" id="button" value="Enviar" >
+                                    <input type="reset" class="btn" id="reset">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="quizFlex">
@@ -208,6 +208,7 @@
     <script src="../javascript/quiz.js"></script>
     <script src="../javascript/quizPreguntas.js"></script>
     <script src="../javascript/form.js"></script>
+    <script src="../javascript/email.js"></script>
 
     <!--link js librerias-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
