@@ -20,76 +20,67 @@ const questions = [
         option3: 'Gabriel Graciani',
         answer: '3',
     },
-    // {
-    //     text: '¿En qué año se fundó el club?',
-    //     answer: [
-    //         {text: '1916', correct: false},
-    //         {text: '1917', correct: false},
-    //         {text: '1918', correct: true}
-    //     ]
-    // },
-    // {
-    //     text: '¿En qué fecha se festeja el día del hincha de Instituto?',
-    //     answer: [
-    //         {text: '18 de junio', correct: false},
-    //         {text: '19 de junio', correct: true},
-    //         {text: '20 de junio', correct: false}
-    //     ]
-    // },
-    // {
-    //     text: '¿Quién es el goleador histórico de Instituto en AFA?',
-    //     answer: [
-    //         {text: 'Oscar Dertycia', correct: true},
-    //         {text: 'Mario Alberto Kempes', correct: false},
-    //         {text: 'Daniel Ángel Jiménez', correct: false}
-    //     ]
-    // },
-    // {
-    //     text: '¿Contra qué equipo definió Instituto el título de la LNB?',
-    //     answer: [
-    //         {text: 'Quimsa', correct: true},
-    //         {text: 'Boca Juniors', correct: false},
-    //         {text: 'San Martín', correct: false}
-    //     ]
-    // },
-    // {
-    //     text: '¿Cuál fue el resultado del quinto juego con el que Instituto se consagró campeón?',
-    //     answer: [
-    //         {text: '82 - 83', correct: false},
-    //         {text: '83 - 84', correct: false},
-    //         {text: '84 - 85', correct: true}
-    //     ]
-    // },
-    // {
-    //     text: '¿Qué jugador fue elegido como MVP de la final?',
-    //     answer: [
-    //         {text: 'Nicolás Romano', correct: false},
-    //         {text: 'Martín Cuello', correct: true},
-    //         {text: 'Luciano González', correct: false}
-    //     ]
-    // },
-    // {
-    //     text: '¿Cuál fue la máxima instancia que Instituto disputó en la BCL Americas?',
-    //     answer: [
-    //         {text: 'Final', correct: false},
-    //         {text: 'Semifinal', correct: true},
-    //         {text: 'Fase de grupos', correct: false}
-    //     ]
-    // },
-    // {
-    //     text: '¿En qué año logró Instituto volver a la máxima categoría del básquet nacional?',
-    //     answer: [
-    //         {text: '2013', correct: false},
-    //         {text: '2014', correct: false},
-    //         {text: '2015', correct: true}
-    //     ]
-    // },
-    // {
-    //     text: '¿Quién fue el técnico que logró coronar a Instituto como campeón del TNA?',
-    //     answer: [
-    //         {text: 'Osvaldo Arduh', correct: true},
-    //         {text: 'Sebastián Ginóbili', correct: false},
-    //         {text: 'Facundo Müller', correct: false}
-    //     ]
-    // }
+    {
+        text: '¿En qué año se fundó el club?',
+        option1: '1916',
+        option2: '1917',
+        option3: '1918',
+        answer: '3'
+    },
+    {
+        text: '¿En qué fecha se festeja el día del hincha de Instituto?',
+        option1: '18 de junio',
+        option2: '19 de junio',
+        option3: '20 de junio',
+        answer: '2'
+    },
+    {
+        text: '¿Quién es el goleador histórico de Instituto en AFA?',
+        option1: 'Oscar Dertycia',
+        option2: 'Mario Alberto Kempes',
+        option3: 'Daniel Ángel Jiménez',
+        answer: '1'
+    },
+    {
+        text: '¿Contra qué equipo definió Instituto el título de la LNB?',
+        option1: 'Quimsa',
+        option2: 'Boca Juniors',
+        option3: 'San Martín',
+        answer: '1'
+    },
+    {
+        text: '¿Cuál fue el resultado del quinto juego con el que Instituto se consagró campeón?',
+        option1: '82 - 83',
+        option2: '83 - 84',
+        option3: '84 - 85',
+        answer: '3'
+    },
+    {
+        text: '¿Qué jugador fue elegido como MVP de la final?',
+        option1: 'Nicolás Romano',
+        option2: 'Martín Cuello',
+        option3: 'Luciano González',
+        answer: '2'
+    },
+    {
+        text: '¿Cuál fue la máxima instancia que Instituto disputó en la BCL Americas?',
+        option1: 'Final',
+        option2: 'Semifinal',
+        option3: 'Fase de grupos',
+        answer: '2'
+    },
+    {
+        text: '¿En qué año logró Instituto volver a la máxima categoría del básquet nacional?',
+        option1: '2013',
+        option2: '2014',
+        option3: '2015',
+        answer: '3'
+    },
+    {
+        text: '¿Quién fue el técnico que logró coronar a Instituto como campeón del TNA?',
+        option1: 'Osvaldo Arduh',
+        option2: 'Sebastián Ginóbili',
+        option3: 'Facundo Müller',
+        answer: '1'
+    }
 ]

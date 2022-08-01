@@ -149,17 +149,29 @@
                         <div id="divQuiz">                            
                             <div id="divPreguntas" class="preguntasTexto hide">Pregunta</div>
                             <div id="divOpciones" class="btnOpciones hide">
-                                <button data-number="1" class="optBtn btn">1</button>
-                                <button data-number="2" class="optBtn btn">2</button>
-                                <button data-number="3" class="optBtn btn">3</button>
+                                <div><button data-number="1" class="optBtn btn">1</button></div>
+                                <div><button data-number="2" class="optBtn btn">2</button></div>
+                                <div><button data-number="3" class="optBtn btn">3</button></div>
+                            </div>
+                            <div id="progress" class="preguntasTexto hide"></div>
+                            <div id="scoreDiv" class="preguntasTexto hide">
+                                <p>Puntaje</p>
+                                <p id="score" >0</p>
                             </div>
                             <div id="endQuiz" class="hide">
-                                <p class="quizParrafo">Puntaje final</p>
-                                <p id="finalScore">0</p>
-                                <form action="" class="endQuizForm">
-                                    <input type="text" name="name" id="userName" placeholder="Escribí tu nombre">
-                                    <button type="submit" id="saveScoreBtn" class="btn" onclick="saveHighscore(event)" disabled>Guardar</button>
+                                <p class="preguntasTexto">Puntaje final</p>
+                                <p id="finalScore" class="preguntasTexto">0</p>
+                                <form action="" id="endQuizForm">
+                                    <input type="text" name="name" id="userName" placeholder="Escribí tu nombre" required>
+                                    <button type="submit" id="saveScoreBtn" class="btn" onclick="saveHighscore(event)">Guardar</button>
                                 </form>
+                            </div>
+                            <div id="highScoresDiv" class="hide">
+                                <p class="preguntasTexto">Tabla de posiciones</p>
+                                <ul id="highSchoresList" class="preguntasTexto"></ul>
+                                <button id="goBack" class="btn">Volver atrás</button>
+                                
+
                             </div>
                         </div>
                     </div>
