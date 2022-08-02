@@ -1,9 +1,9 @@
 const questions = [
     {
         text: '¿Cuántos puntos tiene Instituto en el campeonato?',
-        option1: '36',
-        option2: '37',
-        option3: '38',
+        option1: '47',
+        option2: '48',
+        option3: '49',
         answer: '1',
     },
     {

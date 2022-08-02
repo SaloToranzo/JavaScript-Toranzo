@@ -30,7 +30,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-areas: "participa participa"
-                                    "form quiz";
+                                    "contacto quiz";
                 gap: 2rem;
             }
             
@@ -42,41 +42,12 @@
                 display: none;
             }
 
-            .formFlex{
+            .hinchaContacto{
                 border-radius: 0.5rem;
                 border: solid darkred 0.2rem;
-                grid-area: form;
-                margin: 2rem
-            }
-
-            .bloqueFormDatos{
-                @extend %espacio;
-                background-color: darkred;
-                color: $colorSecundario;
-                
-                .datos{
-                    display: inline-block;
-                    width: 90%;
-                    margin: 1rem;
-                    border: none;
-                    border-radius: 0.5rem;
-                    border-bottom: solid darkred 0.2rem;
-                }
-                .datosHistoria{
-                    margin: 1rem;
-                    display: inline-block;
-                    resize: none;
-                    text-align: center;
-                    width: 90%;
-                    height: 5rem;
-                    border: none;
-                    border-radius: 0.5rem;
-                    border-bottom: solid darkred 0.2rem;
-                }
-                .foto{
-                    margin: 1rem;
-                    display: inline-block;
-                }
+                grid-area: contacto;
+                margin: 2rem;
+                @include flex(column, center, center, nowrap);
                 .btn{
                     @extend %espacio;
                     background-color: whitesmoke;
@@ -86,7 +57,7 @@
                     margin: 2rem;
                     width: 7rem;
                     height: 5rem;
-                    justify-content: space-evenly;
+                    justify-content: center;
                     align-content: center;
                         &:hover{
                             border: black solid 2px;
@@ -94,6 +65,13 @@
                             transition: 0.3s;
                         }
                 }
+                .contactoTexto{
+                    @extend %parrafos;
+                    @extend %espacio;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            };
                 
             }
             #quizFlex{
@@ -108,7 +86,7 @@
                     @extend %espacio;
                     text-align: center;
                     font-size: 1.2rem;
-                }
+                };
 
                 #quiz{
                     background-color: $colorFondo;
@@ -161,4 +139,3 @@
             
         }
     }
-}

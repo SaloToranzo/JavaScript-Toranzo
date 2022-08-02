@@ -1,20 +1,27 @@
-const btn = document.getElementById('button');
+const btn = document.getElementById('send');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById('formulario').addEventListener('submit', function(event) {
+  event.preventDefault();
 
    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'service_hs6a1km';
    const templateID = 'template_ujfcdud';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviar';
-      alert('Formulario enviado correctamente!');
+      Swal.fire({
+        icon: 'success',
+        title: '¡Todo listo!',
+        text: 'Formulario enviado correctamente. Pronto nos pondremos en contacto.',
+      })
     }, (err) => {
       btn.value = 'Enviar';
-      alert(JSON.stringify(err));
+      Swal.fire({
+        icon: 'error',
+        title: '¡Todo listo!',
+        text: 'No pudimos registrar tus datos. Por favor, intentá nuevamente.',
+      })
     });
 });

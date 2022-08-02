@@ -26,6 +26,17 @@
                 border-radius: 0.5rem;
                 border-bottom: solid darkred 0.2rem;
             };
+            .datosHistoria{
+                margin: 1rem;
+                display: inline-block;
+                resize: none;
+                text-align: center;
+                width: 90%;
+                height: 5rem;
+                border: none;
+                border-radius: 0.5rem;
+                border-bottom: solid darkred 0.2rem;
+            };
             .btn{
                 @extend %espacio;
                 background-color: whitesmoke;
