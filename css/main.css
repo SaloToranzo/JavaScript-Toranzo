@@ -86,7 +86,9 @@ footer {
     .divBodyIndex main {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: "titulos titulos" "novedades side" "footer footer"; } }
+      grid-template-areas: "titulos titulos"
+ "novedades side"
+ "footer footer"; } }
   .divBodyIndex main .titulos {
     grid-area: titulos; }
   .divBodyIndex main .novedades {
@@ -363,7 +365,8 @@ footer {
     .divBodyBloque main .bloqueForm {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "participa participa" "contacto quiz";
+      grid-template-areas: "participa participa"
+ "contacto quiz";
       gap: 2rem; } }
   .divBodyBloque main .bloqueForm .participa {
     grid-area: participa;
@@ -564,6 +567,6 @@ footer {
   #quiz .correct {
     background-color: green;
     color: black; }
-  #quiz .wrong {
-    background-color: red;
+  #quiz .incorrect {
+    background-color: darkred;
     color: whitesmoke; }
