@@ -7,15 +7,19 @@ header{
         ul{
             list-style: none;
             li{
+                color: $colorSecundario;
                 font-family: $fontNav; 
                 font-size: 1.5rem;
                 margin-right: 2rem;
                 @media screen and (min-width: 1200px){
                     &:hover{
-                        transform: scale(1.2);
                         text-decoration: underline;
-                    }
-                    
+                    }                    
+                };
+                .dropdown-menu{
+                    list-style: none;
+                    background-color: $colorSecundario;
+                    color: whitesmoke;
                 }
                 
             }

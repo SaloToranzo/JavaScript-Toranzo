@@ -1,0 +1,23 @@
+[
+    {
+        "puesto": "Co-conducción",
+        "tareas": "En la co-conducción te sumás al equipo por la totalidad del tiempo del programa. Es necesario que estés al día con las novdedades del club, esperamos que tengas una participación activa sobre cualquier contenido que se discuta en la mesa.",
+        "modalidad": "Presencial"
+    },
+    {
+        "puesto": "Columnista",
+        "tareas": "Como columnista participás brevemente en el programa para comentar las novedades sobre uno, o más, deportes del club. Debés conocer el deporte que te interese cubrir y las competiciones en las que participa Instituto para poder abordar la información al aire.",
+        "modalidad": "Presencial o telefónica"
+    },
+    {
+        "puesto": "Producción",
+        "tareas": "Para producción es necesario que puedas identificar la información más relevante del club diariamente para organizar el contenido del programa. Además, es tu responsabilidad gestionar las notas con los protagonistas.",
+        "modalidad": "Preferentemente, presencial"
+    },
+    {
+        "puesto": "Encargado/a de redes",
+        "tareas": "Como CM tu trabajo es gestionar las redes sociales de Estación. Estarás encargado/a de la producción de contenidos para las notas en vivo, y de realizar los sorteos de Instagram.",
+        "modalidad": "Presencial y remota"
+    }
+
+]
